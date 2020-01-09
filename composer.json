@@ -1,0 +1,27 @@
+{
+    "name": "amr-fekry/framework",
+    "description": "PHP framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AmrFekry",
+            "email": "amrahmedfekry@icloud.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : "^7.1.3",
+        "filp/whoops": "^2.5",
+        "jenssegers/blade": "^1.2",
+        "rakit/validation": "^1.2"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "bianky\\" :"src/"     
+        }, 
+        "files" : [
+            "src/Helpers/helper.php"
+        ]
+    }
+}
