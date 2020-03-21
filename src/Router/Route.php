@@ -194,7 +194,7 @@ class Route {
                 }
 
                 if ($matched == true) {
-                    static::invoke($route, $params);
+                    return static::invoke($route, $params);
                 }
             }
         }

@@ -11,6 +11,5 @@ class Handle
      */
     public function __construct($argv)
     {
-
     }
 }

@@ -1,12 +1,12 @@
 <?php
 namespace bianky\Bootstrap;
 
-use App\Http\Response;
-use bianky\ErrorHandller\Whoops;
-use bianky\Http\Request;
-use bianky\Session\Session;
 use bianky\File\File;
+use bianky\Http\Request;
 use bianky\Router\Route;
+use bianky\Http\Response;
+use bianky\Session\Session;
+use bianky\ErrorHandller\Whoops;
 
 class App
 {
@@ -31,7 +31,7 @@ class App
         File::requireDirectory('routes');
 
         $data = Route::handle();
-        die($data);
+
         Response::output($data);
     }
 }
